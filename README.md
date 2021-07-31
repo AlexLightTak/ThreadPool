@@ -1,4 +1,4 @@
-ThreadPool
+PtrThreadPool
 ==========
 
 A simple C++11 Thread Pool implementation.
@@ -17,7 +17,7 @@ std::cout << result.get() << std::endl;
 ```
 
 PtrThreadPool
-Added c++20 support and thread assosiated ptr
+Added c++20 support and thread associated ptr
 
 Pass ptrs in ctor: PtrThreadPool(std::vector<void*>)
 Get ptr with: static void **ptr() 
