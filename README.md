@@ -15,3 +15,10 @@ auto result = pool.enqueue([](int answer) { return answer; }, 42);
 std::cout << result.get() << std::endl;
 
 ```
+
+PtrThreadPool
+Added c++20 support and thread assosiated ptr
+
+Pass ptrs in ctor: PtrThreadPool(std::vector<void*>)
+Get ptr with: static void **ptr() 
+See example cpp
